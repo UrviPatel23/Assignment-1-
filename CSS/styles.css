@@ -1,0 +1,74 @@
+/* Author: Urvi Patel, Student Number: 8969117 */
+
+body {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font: 16px/1.5 Arial, sans-serif;
+    padding: 20px;
+}
+
+.header-footer {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+h1, h2 {
+    color: #333;
+    font-variant: small-caps;
+}
+
+footer p {
+    font-size: 12px;
+    color: #555;
+}
+
+main {
+    float: left;
+    width: 66.66%;
+    padding: 20px;
+    margin: 0;
+}
+
+aside {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    margin: 0;
+}
+
+main::after, aside::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.mainimg {
+    border: 3px solid #ddd;
+}
+
+figcaption {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+q {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+aside ul li {
+    list-style-type: none;
+    line-height: 1.6;
+}
+
+aside ul > li > a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+aside ul > li > a:hover {
+    color: #0056b3;
+}
