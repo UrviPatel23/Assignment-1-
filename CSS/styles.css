@@ -27,14 +27,14 @@ footer p {
 
 main {
     float: left;
-    width: 66.66%;
+    width: 60%;
     padding: 20px;
     margin: 0;
 }
 
 aside {
     float: left;
-    width: 33.33%;
+    width: 40%;
     padding: 20px;
     margin: 0;
 }
@@ -46,6 +46,9 @@ main::after, aside::after {
 }
 .mainimg {
     border: 3px solid #ddd;
+    float: left;
+    width: 60%;
+    padding: 20px;
 }
 
 figcaption {
