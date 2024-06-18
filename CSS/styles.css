@@ -38,3 +38,35 @@ aside {
     width: 35%;
     padding: 20px;
 }
+
+.mainimg {
+    border: 3px solid #ddd;
+    width: 80%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+figcaption {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+q {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+aside ul li {
+    list-style-type: none;
+    line-height: 1.6;
+}
+
+aside ul > li > a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+aside ul > li > a:hover {
+    color: #0056b3;
+}
