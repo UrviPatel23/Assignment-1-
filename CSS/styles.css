@@ -44,6 +44,7 @@ main::after, aside::after {
     display: table;
     clear: both;
 }
+
 .mainimg {
     border: 3px solid #ddd;
     float: left;
