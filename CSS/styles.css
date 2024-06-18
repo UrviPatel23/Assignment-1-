@@ -1,5 +1,4 @@
 /* Author: Urvi Patel, Student Number: 8969117 */
-
 body {
     width: 80%;
     max-width: 1200px;
@@ -25,30 +24,26 @@ footer p {
     color: #555;
 }
 
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
 main {
-    float: left;
     width: 60%;
     padding: 20px;
-    margin: 0;
 }
 
 aside {
-    float: right;
-    width: 40%;
+    width: 35%;
     padding: 20px;
-    margin: 0;
-}
-
-main::after, aside::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .mainimg {
     border: 3px solid #ddd;
     width: 100%;
     display: block;
+    margin-bottom: 10px;
 }
 
 figcaption {
