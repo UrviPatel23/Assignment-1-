@@ -47,9 +47,8 @@ main::after, aside::after {
 
 .mainimg {
     border: 3px solid #ddd;
-    float: left;
-    width: 60%;
-    padding: 20px;
+    width: 100%;
+    display: block;
 }
 
 figcaption {
