@@ -62,7 +62,6 @@ aside {
     background: url('Images/bgimage.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 8px;
-    color: #fff;
 }
 .mainimg {
     float: left;
