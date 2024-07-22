@@ -58,9 +58,9 @@ aside {
     flex: 1;
     padding: 20px;
     margin-left: 20px;
-    background: url('Images/bg.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 8px;
+    background: url('Images/bg.jpg') no-repeat center center;
 }
 
 .mainimg {
