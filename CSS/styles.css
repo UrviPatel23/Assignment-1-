@@ -1,14 +1,5 @@
 /* Author: Urvi Patel, Student Number: 8969117 */
-@import url('CSS/normalize.css');
-
-html {
-    font-size: 16px;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
@@ -16,18 +7,19 @@ body {
     padding: 20px;
 }
 
-header, footer {
-    background: linear-gradient(to right, #333, #555);
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    border: 2px solid #000;
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
-    margin: 20px 0;
+}
+
+header h1 {
+    color: #fff;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -37,23 +29,28 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: #fff;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    text-decoration: underline;
 }
 
-.container {
+footer {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    justify-content: space-between;
 }
 
-.main {
-    flex: 1;
-    padding: 1rem;
+main {
     width: 60%;
     padding: 20px;
 }
@@ -61,62 +58,20 @@ nav ul li a:hover {
 aside {
     width: 35%;
     padding: 20px;
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/aside-bg.jpg');
     background-size: cover;
-    color: white;
-    padding: 1rem;
+    background-position: center;
+    border-radius: 10px;
 }
 
-.img-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.img-grid img {
-    width: 100%;
-    clip-path: circle(50%);
-}
-
-img.mainimg {
-    float: left;
-    margin: 0 20px 20px 0;
-    shape-outside: circle(50%);
+.mainimg {
     border: 3px solid #ddd;
-    width: 80%;
+    width: 100%;
     display: block;
     margin-bottom: 10px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
-}
-
-form label {
-    margin-top: 10px;
-}
-
-form input, form select {
-    padding: 0.5rem;
-    margin-top: 5px;
-}
-
-h1, h2 {
-    color: #4602e6;
-    font-variant: small-caps;
-}
-
-footer p {
-    font-size: 12px;
-    color: #555;
-}
-
-.content {
-    display: flex;
-    justify-content: space-between;
+    float: left;
+    shape-outside: circle(50%);
+    margin-right: 20px;
 }
 
 figcaption {
@@ -142,22 +97,4 @@ aside ul > li > a {
 
 aside ul > li > a:hover {
     color: #0056b3;
-}
-
-@media (max-width: 768px) {
-    .img-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    aside {
-        background-image: url('../images/background-medium.jpg');
-    }
-}
-
-@media (max-width: 480px) {
-    .img-grid {
-        grid-template-columns: 1fr;
-    }
-    aside {
-        background-image: url('../images/background-small.jpg');
-    }
 }
