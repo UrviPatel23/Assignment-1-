@@ -1,5 +1,14 @@
 /* Author: Urvi Patel, Student Number: 8969117 */
+@import url('normalize.css');
+
+html {
+    font-size: 16px;
+}
+
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
@@ -7,11 +16,92 @@ body {
     padding: 20px;
 }
 
-.header-footer {
+header, footer {
+    background: linear-gradient(to right, #333, #555);
+    color: white;
+    padding: 1rem;
+    text-align: center;
     border: 2px solid #000;
     border-radius: 10px;
-    padding: 10px;
     margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+    padding: 1rem;
+    width: 60%;
+    padding: 20px;
+}
+
+aside {
+    width: 35%;
+    padding: 20px;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    color: white;
+    padding: 1rem;
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.img-grid img {
+    width: 100%;
+    clip-path: circle(50%);
+}
+
+img.mainimg {
+    float: left;
+    margin: 0 20px 20px 0;
+    shape-outside: circle(50%);
+    border: 3px solid #ddd;
+    width: 80%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form select {
+    padding: 0.5rem;
+    margin-top: 5px;
 }
 
 h1, h2 {
@@ -27,23 +117,6 @@ footer p {
 .content {
     display: flex;
     justify-content: space-between;
-}
-
-main {
-    width: 60%;
-    padding: 20px;
-}
-
-aside {
-    width: 35%;
-    padding: 20px;
-}
-
-.mainimg {
-    border: 3px solid #ddd;
-    width: 80%;
-    display: block;
-    margin-bottom: 10px;
 }
 
 figcaption {
@@ -69,4 +142,22 @@ aside ul > li > a {
 
 aside ul > li > a:hover {
     color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .img-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    aside {
+        background-image: url('../images/background-medium.jpg');
+    }
+}
+
+@media (max-width: 480px) {
+    .img-grid {
+        grid-template-columns: 1fr;
+    }
+    aside {
+        background-image: url('../images/background-small.jpg');
+    }
 }
