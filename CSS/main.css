@@ -97,7 +97,24 @@ footer p {
     font-size: 14px;
     color: #fff;
 }
+.grid {
+      display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
 
+.grid img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border: 3px solid #fff; /* Optional border to highlight images */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow for better appearance */
+        }
+        
+.grid img:hover {
+            opacity: 0.8; /* Slight fade effect on hover */
+        }
 /* Responsive Design */
 @media (max-width: 768px) {
     .content {
