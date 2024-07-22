@@ -98,3 +98,14 @@ aside ul > li > a {
 aside ul > li > a:hover {
     color: #0056b3;
 }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border: 3px solid #ddd;
+    clip-path: circle(50%);
+}
