@@ -35,7 +35,7 @@ aside {
     width: 40%;
     padding: 20px;
     margin: 0;
-    background-image: url('Images/background.jpg'); /* Example background image */
+    background-image: url('Images/bg.jpg');
     background-size: cover;
 }
 
