@@ -7,71 +7,49 @@ body {
     padding: 20px;
 }
 
-header {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    padding: 20px;
-    margin-bottom: 20px;
+.header-footer {
+    border: 2px solid #000;
     border-radius: 10px;
-}
-
-header h1 {
-    color: #fff;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
     padding: 10px;
-    border-radius: 10px;
-    margin-top: 20px;
-    text-align: center;
+    margin: 20px 0;
 }
 
-.content {
-    display: flex;
-    justify-content: space-between;
+h1, h2 {
+    color: #4602e6;
+    font-variant: small-caps;
+}
+
+footer p {
+    font-size: 12px;
+    color: #555;
 }
 
 main {
-    width: 60%;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 aside {
-    width: 35%;
+    float: right;
+    width: 40%;
     padding: 20px;
-    background-image: url('../images/aside-bg.jpg');
+    margin: 0;
+    background-image: url('Images/background.jpg'); /* Example background image */
     background-size: cover;
-    background-position: center;
-    border-radius: 10px;
+}
+
+main::after, aside::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .mainimg {
     border: 3px solid #ddd;
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
     float: left;
-    shape-outside: circle(50%);
     margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 figcaption {
@@ -98,14 +76,26 @@ aside ul > li > a {
 aside ul > li > a:hover {
     color: #0056b3;
 }
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
 
-.gallery img {
-    width: 100%;
-    border: 3px solid #ddd;
-    clip-path: circle(50%);
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        padding: 10px;
+    }
+
+    aside {
+        width: 100%;
+        float: none;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .mainimg {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
 }
