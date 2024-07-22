@@ -40,8 +40,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #007BFF;
 }
-
-/* Layout Styles */
 .content {
     display: flex;
     width: 80%;
@@ -61,12 +59,11 @@ aside {
     flex: 1;
     padding: 20px;
     margin-left: 20px;
-    background: url('Images/bg.jpg') no-repeat center center/cover;
+    background: url('Images/bg.jpg') no-repeat center center;
+    background-size: cover;
     border-radius: 8px;
     color: #fff;
 }
-
-/* Image Styles */
 .mainimg {
     float: left;
     margin-right: 20px;
@@ -77,8 +74,6 @@ aside {
     object-fit: cover;
     shape-outside: circle();
 }
-
-/* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -91,7 +86,6 @@ table, th, td {
     text-align: left;
 }
 
-/* Footer Styles */
 footer p {
     margin: 0;
     font-size: 14px;
@@ -114,7 +108,7 @@ footer p {
         }
         
 .grid img:hover {
-            opacity: 0.8; /* Slight fade effect on hover */
+            opacity: 0.8; 
         }
 /* Responsive Design */
 @media (max-width: 768px) {
