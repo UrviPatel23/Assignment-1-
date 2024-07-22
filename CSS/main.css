@@ -81,6 +81,7 @@ aside ul > li > a:hover {
 
 /* Table Styles */
 table {
+    width: 80%;
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
