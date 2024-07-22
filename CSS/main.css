@@ -103,13 +103,14 @@ footer p {
             gap: 10px;
         }
 
-.grid img {
+   .grid img {
             width: 100%;
             height: auto;
             object-fit: cover;
-            border: 3px solid #fff; /* Optional border to highlight images */
-            border-radius: 8px; /* Rounded corners */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow for better appearance */
+            border: 3px solid #fff;
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            filter: grayscale(70%) sepia(20%) contrast(90%);
         }
         
 .grid img:hover {
