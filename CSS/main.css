@@ -61,6 +61,7 @@ aside {
     background-size: cover;
     border-radius: 8px;
     background: url('Images/backhground.jpg');
+    font-color: white;
 }
 
 .mainimg {
