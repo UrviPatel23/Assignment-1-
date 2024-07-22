@@ -60,7 +60,7 @@ aside {
     margin-left: 20px;
     background-size: cover;
     border-radius: 8px;
-    background: url('Images/bgimage.jpg') no-repeat center center;
+    background: url('Images/backhground.jpg') no-repeat center center;
 }
 
 .mainimg {
@@ -109,7 +109,7 @@ footer p {
 .grid img:hover {
             opacity: 0.8; 
         }
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
