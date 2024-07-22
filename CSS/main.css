@@ -60,7 +60,7 @@ aside {
     flex: 1;
     padding: 20px;
     margin-left: 20px;
-    background: url('Images/background.jpg') no-repeat center center/cover;
+    background: url('Images/bg.jpg') 
     border-radius: 8px;
     color: #fff;
 }
