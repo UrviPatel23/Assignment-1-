@@ -1,4 +1,7 @@
 /* Author: Urvi Patel, Student Number: 8969117 */
+/* Author: Urvi Patel, Student Number: 8969117 */
+
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -41,6 +44,7 @@ nav ul li a:hover {
     color: #007BFF;
 }
 
+/* Layout Styles */
 .content {
     display: flex;
     width: 80%;
@@ -60,11 +64,12 @@ aside {
     flex: 1;
     padding: 20px;
     margin-left: 20px;
-    background: url('Images/bg.jpg') 
+    background: url('Images/bg.jpg') no-repeat center center/cover;
     border-radius: 8px;
     color: #fff;
 }
 
+/* Image Styles */
 .mainimg {
     float: left;
     margin-right: 20px;
@@ -76,6 +81,7 @@ aside {
     shape-outside: circle();
 }
 
+/* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -88,6 +94,7 @@ table, th, td {
     text-align: left;
 }
 
+/* Footer Styles */
 footer p {
     margin: 0;
     font-size: 14px;
@@ -111,3 +118,4 @@ footer p {
         margin: 0 auto 10px;
     }
 }
+
