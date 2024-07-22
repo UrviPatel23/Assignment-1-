@@ -1,87 +1,82 @@
 /* Author: Urvi Patel, Student Number: 8969117 */
 body {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    font: 16px/1.5 Arial, sans-serif;
-    padding: 20px;
-}
-
-.header-footer {
-    border: 2px solid #000;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 20px 0;
-}
-
-h1, h2 {
-    color: #4602e6;
-    font-variant: small-caps;
-}
-
-footer p {
-    font-size: 12px;
-    color: #555;
-}
-
-main {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    background: #f4f4f4;
 }
 
-aside {
-    float: right;
-    width: 40%;
+header, footer {
+    width: 100%;
     padding: 20px;
-    margin: 0;
-    background-image: url('Images/bg.jpg');
-    background-size: cover;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    text-align: center;
 }
 
-main::after, aside::after {
-    content: "";
-    display: table;
-    clear: both;
+h1, h2, h3 {
+    margin: 0 0 10px;
+    color: #333;
 }
 
-.mainimg {
-    border: 3px solid #ddd;
-    float: left;
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
     margin-right: 20px;
-    margin-bottom: 10px;
-    shape-outside: circle();
-    width: 150px; /* Adjust size as needed */
 }
 
-figcaption {
-    font-weight: bold;
-    font-variant: small-caps;
-}
-
-q {
-    font-family: cursive;
-    font-style: italic;
-    font-size: 1.2em;
-}
-
-aside ul li {
-    list-style-type: none;
-    line-height: 1.6;
-}
-
-aside ul > li > a {
+nav ul li a {
     text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
     color: #007BFF;
 }
 
-aside ul > li > a:hover {
-    color: #0056b3;
+.content {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
-/* Table Styles */
+main {
+    flex: 3;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    margin-left: 20px;
+    background: url('Images/background.jpg') no-repeat center center/cover;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.mainimg {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    shape-outside: circle();
+}
+
 table {
-    width: 80%;
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
@@ -93,20 +88,21 @@ table, th, td {
     text-align: left;
 }
 
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    body {
-        width: 100%;
-        padding: 10px;
+    .content {
+        flex-direction: column;
     }
 
     aside {
-        width: 100%;
-        float: none;
-    }
-
-    main {
-        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
     }
 
     .mainimg {
